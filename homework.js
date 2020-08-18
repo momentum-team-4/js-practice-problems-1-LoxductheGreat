@@ -1,26 +1,52 @@
 // 1. Set the variable `givenName` to the string "Addison".
+let givenName = ("Addison");
 
 // 2. Set candies equal to 20, people to 6, and leftover equal
 // to the remainder of dividing 20 by 6.
+ candies = 20;
+ people = 6;
+ leftover = 2;
 
 // 3. Create a function called greeting that returns "Hello, <name>!",
 // where <name> is the name given as an argument to the function.
+function greeting(name){
+    return "Hello, "+name+"!"
+}
 
 // 4. Create a function called isOdd that, given a number, will
 // return true if it is odd and false if it is not. An odd number is a
 // number which, when divided by 2, has a remainder of 1 or -1.
-
+function isOdd(num){
+    if (num % 2 === 1||num % 2 === -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
 // 5. Create a function called isEven that, given a number, will
 // return true if it is even and false if it is not. An even number is a
 // number which, when divided by 2, has a remainder of 0.
-
+function isEven(num){
+    if (num % 2 === 0 || num % 2 === 0){
+        return true;
+    } else {
+        return false;
+    }
+}
 // 6. Create a function called fahrenheitToCelsius that takes a
 // Fahrenheit temperature as an argument and returns the
 // temperature in Celsius.
-
+function fahrenheitToCelsius(num){
+    num = (num - 32) / (9 / 5)
+    return num; 
+}
 // 6. Create a function called celsiusToFahrenheit that takes a
 // Celsius temperature as an argument and returns the
 // temperature in Fahrenheit.
+function celsiusToFahrenheit(num){
+    num = (num * 1.8) + 32
+    return num;
+}
 
 // 7. Create a function called fahrenheitToKelvin that takes a
 // Fahrenheit temperature as an argument and returns the
@@ -28,6 +54,12 @@
 // fahrenheitToCelsius function.
 // Absolute zero (0 K) is equivalent to −273.15 C.
 // 1 degree Kelvin equals 1 degree Celsius.
+
+function fahrenheitToKelvin(num){
+    num =(num + 459.67) * 5/9 
+        return num;
+
+}
 
 // 8. Create a function called lesser that takes two numbers as
 // arguments and returns the lesser of them. This function should
